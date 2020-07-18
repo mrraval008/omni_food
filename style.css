@@ -1,0 +1,497 @@
+/* https://css-tricks.com/snippets/html/glyphs/ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    font-size:20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("resources/images/header_image.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-content h1{
+    font-weight: 100;
+    font-size: 40px
+}
+
+.main-content{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    /* transform: translate(-50%,-50%); */
+    color: white;
+}
+.main-content h1{
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    
+}
+
+.btn
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 300px;
+    transition: background-color 1s,border 1s;
+}
+.full
+{
+    background-color: #e67e22
+}
+.ghost{
+    border: 1px solid #e67e22
+}
+.full:hover,
+.full:active
+{
+    background: #f39c12;
+}
+.ghost:hover,
+.ghost:active{
+    background: #e67e22
+}
+
+.logo{
+    height: 100px;
+    float: left;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.nav-list{
+    float: right;
+    margin-right: 10%;
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+.nav-list li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-list li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav-list li a{
+    padding: 8px 0px;
+    margin-left: 10px;
+    text-decoration: none;
+    color:white;
+}
+
+.nav-list li a:hover{
+    border-bottom: 1px solid #e67e22;
+    
+}
+
+.section-feature{
+    padding: 0 3%;
+    margin-bottom: 8%;
+    font-size: 110%
+}
+
+.flex{
+    display: flex;
+
+}
+.sectionHeader{
+    justify-content: center;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 4%;
+}
+.sectionHeader h2::after{
+   content: " ";
+   width:100px;
+   height: 2px;
+   background-color : #e67e22;
+   display: block;
+   margin: 20px auto;
+}
+
+.flexcolumn{
+    flex-direction: column;
+    min-width: 11rem;
+}
+.p-r-50{
+    /* padding-right:50px */
+}
+
+.featureContainer{
+    justify-content: space-evenly;
+    /* height: 13rem; */
+        /* justify-content: space-between */
+}
+.featureContainer div{
+    font-size: 110%;
+    padding-bottom: 10px;
+    margin: 0 10px;
+    justify-content: space-between
+}
+.section-feature h5{
+    font-size: 140%;
+    font-weight: 100;
+    margin: 10px 0;
+}
+.section-feature p{
+    margin: 5px 0px;
+    font-size: 80%;
+}
+
+.featureIcon{
+    color: #e67e22;
+    font-size: 60px;
+}
+
+.sectionHeader h2{
+    font-weight: normal
+}
+
+
+/*-----------------------------------------------------------*/
+/*Meals*/
+/*-----------------------------------------------------------*/
+.section-meals{
+    overflow: hidden
+}
+.meals-showcase{
+    background: black
+}
+.meal-photo{
+    width: 25%;
+    opacity: 0.7;
+    transition: transform 0.5s opacity 0.5s;
+    overflow: hidden
+}
+.meal-photo img{
+    width: 100%;
+    height: 250px;
+}
+
+.meal-photo:hover{
+  opacity: 1;
+  transform: scale(1.03)
+}
+
+/*-----------------------------------------------------------*/
+/*How it works*/
+/*-----------------------------------------------------------*/
+
+.section-howitworks{
+    background-color: #E8E8E8
+}
+
+.worksContainer{
+    justify-content: flex-end
+}
+.appImage{
+    width: 20%;
+    margin-right: 10%;
+}
+.appImage img{
+    width: 100%;
+    height: 80%
+}
+
+.worksteps{
+    align-items: center;
+    margin-bottom: 5%
+}
+.worksteps img{
+    margin: 3% 1%;
+    width: 20%;
+}
+
+.worksteps p{
+    max-width: 50%
+}
+
+.worksteps div{
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    margin-right: 4%
+}
+
+.workstepsContainer{
+    margin-top: 5%;
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*Cities*/
+/*------------------------------------------------------------*/
+.citiesContainer{
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 3%;
+    padding-bottom: 5%
+}
+.cityContainer{
+    width: 18%;
+    font-size: 110%;
+   padding-bottom: 10px
+   
+}
+.cityContainer img{
+    width: 100%
+}
+.cityContainer div{
+    width: 100%;
+}
+
+.cityContainer > span{
+    margin: 5% 0;
+    font-weight: bold
+}
+.cityContainer i{
+    color: #e67e22;
+    margin-right: 4%;
+    font-size: 120%;
+}
+
+/*-----------------------------------------------------------*/
+/*Testimonials*/
+/*------------------------------------------------------------*/
+
+.section-testimonials{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("resources/images/back-customers.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 0 10% 4% 10%;
+    line-height: 25px;
+}
+blockquote{
+    display: block;
+    width: 80%;
+    padding-bottom: 4%;
+    position: relative;
+    font-style: italic
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 80px;
+    display: block;
+    position: absolute;
+    top: -3%;
+}
+
+cite{
+    margin-top: 3%
+}
+.testimonialsContainer{
+    width: 22rem;
+}
+.testimonials{
+    justify-content: flex-end
+}
+
+cite img{
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 4%;
+}
+
+
+/*-----------------------------------------------------------*/
+/*planDetails*/
+/*------------------------------------------------------------*/
+
+.section-plandetails{
+    background: #E8E8E8
+}
+.plandetailsContainer{
+    padding: 0 5%;
+    justify-content:space-evenly
+}
+.planContainer{
+    background: white;
+    width: 20rem;
+    color: gray;
+    padding-bottom: 1%;
+    margin: 0 2rem 2rem 2rem
+}
+.planContainer div{
+    border-bottom: 1px solid #DCDCDC;
+    padding-bottom: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+.planContainer div:last-child{
+    text-align: center;
+    margin-top: 0.5rem;
+    border-bottom: none
+}
+.bigFonts{
+    font-size: 300%;
+    color: #e67e22
+}
+.bigFonts span{
+    font-size: 30%
+}
+.planvalue{
+    background-color: whitesmoke
+}
+.planvalue p{
+    padding: 3%
+}
+.planvalue p:first-child{
+    text-transform: uppercase
+}
+
+.planIcons{
+    margin-right: 3%;
+    color: #e67e22
+}
+.plandetails ul{
+    line-height: 180%;
+    padding : 0 5%
+}
+
+.signupbutton{
+    text-align: center;
+    width: 50%;
+    /* margin-left: 23%; */
+}
+
+
+/*-----------------------------------------------------------*/
+/*Conatct*/
+/*------------------------------------------------------------*/
+
+.contactdetailsContainer{
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputField {
+    padding: 1rem;
+    display: flex;
+    width: 30rem;
+    justify-content: space-around;
+}
+.inputField input{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    outline: none;
+    width: 18rem;
+}
+.inputField span{
+    margin-right: 10px
+}
+.contactButton{
+    margin-top: 1.5rem
+}
+
+
+
+
+
+.section-copyright{
+    margin-top: 2rem;
+    background: black;
+    padding-bottom: 2rem
+}
+.about {
+    display: flex;
+    align-items: center
+}
+.about ul{
+    display: flex;
+}
+.about ul li,.socialMedia .links ion-icon{
+    padding: 0 9px
+}
+.socialMedia{
+    padding: 1rem;
+}
+
+.socialMedia .links{
+    margin-left: auto;
+}
+
+.socialMedia .links ion-icon{
+    font-size: 165%;
+ }
+
+ .copyText p{
+    text-align: center
+ }
+
+
+@media only screen and (max-width: 950px) {
+    .testimonialsContainer{
+        margin-top: 4rem
+    }
+    .logo{
+        display: none
+    }
+}
+@media only screen and (max-width: 600px) {
+	body{
+		font-size: 14px
+    }
+    .flex{
+        flex-wrap: wrap
+    } 
+    .flexcolumn , .flexrow{
+        justify-content: center;
+        align-items: center;
+    }
+    .flexcolumn p{
+        text-align: center
+    }
+    .cityContainer{
+        margin-right: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .planContainer{
+        margin-top: 2rem
+    }
+    .inputField{
+        width: 22rem;
+    }
+   
+}
+
