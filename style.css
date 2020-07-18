@@ -148,8 +148,6 @@ header{
 
 .featureContainer{
     justify-content: space-evenly;
-    /* height: 13rem; */
-        /* justify-content: space-between */
 }
 .featureContainer div{
     font-size: 110%;
@@ -158,7 +156,7 @@ header{
     justify-content: space-between
 }
 .section-feature h5{
-    font-size: 140%;
+    font-size: 120%;
     font-weight: 100;
     margin: 10px 0;
 }
